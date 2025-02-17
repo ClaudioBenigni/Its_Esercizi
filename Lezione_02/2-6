@@ -1,0 +1,4 @@
+famous_person = "Luciano Spalletti"
+message = "Uomini forti destini forti, uomini deboli destini deboli"
+
+print (famous_person,message) 

@@ -1,0 +1,6 @@
+friends = ["Matteo","Andrea"]
+
+print (friends[0])
+print (friends[1])
+print (f"{friends[0]} come va?")
+print (f"{friends[1]} come va?")

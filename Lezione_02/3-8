@@ -1,0 +1,22 @@
+places = ["San siro","un milione di euro","giocatori dell'inter","Los Angeles","Miami"]
+print (places)
+
+a_places = sorted(places)
+print (a_places)
+print (places)
+
+b_places = sorted(places, reverse=True)
+print (b_places)
+print (places)
+
+places.reverse()
+print (places)
+
+places.reverse()
+print (places)
+
+places.sort()
+print (places)
+
+places.sort()
+print (places)

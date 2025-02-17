@@ -1,0 +1,6 @@
+favorite = ["Ferrari","Honda"]
+
+print (f"{favorite[0]}, una delle macchine con i migliori motori ")
+print (f"Una delle più grandi marche giapponesi di macchine è la {favorite[1]} ")
+
+print (len(favorite))

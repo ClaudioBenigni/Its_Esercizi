@@ -1,0 +1,5 @@
+Name = "Leo"
+
+print (Name.upper())
+print (Name.lower())
+print (Name.title())
