@@ -1,0 +1,55 @@
+#3-4
+guest = ["Lionel Messi", "Federico Dimarco", "Nicolo Barella"]
+
+print (f"dear {guest[0]}, would you like to go to dinner with me and some of your old teamates? ")
+print (f"ciao {guest[1]} che ne dici di andare a cena fuori insieme a barella? ")
+print (f"ciao {guest[2]} che ne dici di andare a cena fuori insieme a dimarco? ")
+
+#3-5
+print (f"{guest[0]} can't make it in time")
+
+guest = ["Lautaro Martinez", "Federico Dimarco", "Nicolo Barella"]
+
+print (f"ciao {guest[0]} vuoi venire insieme a barella e dimarco a cena? ")
+print (f"ciao {guest[1]} che ne dici di andare a cena fuori insieme a barella? ")
+print (f"ciao {guest[2]} che ne dici di andare a cena fuori insieme a dimarco? ")
+
+#3-6
+print (f" {guest} ho trovato un tavolo più grande, inviterò altre persone")
+
+guest.insert(0, "Marcus Thuram")
+guest.insert(2, "Hakan Chalanoglu")
+guest.append("Yann Bisseck")
+
+print (f"ciao {guest[0]} che ne dici di andare a cena fuori insieme ai tuoi compagni di squadra? ")
+print (f"ciao {guest[1]} che ne dici di andare a cena fuori insieme ai tuoi compagni di squadra? ")
+print (f"ciao {guest[2]} che ne dici di andare a cena fuori insieme ai tuoi compagni di squadra? ")
+print (f"ciao {guest[3]} che ne dici di andare a cena fuori insieme ai tuoi compagni di squadra? ")
+print (f"ciao {guest[4]} che ne dici di andare a cena fuori insieme ai tuoi compagni di squadra? ")
+print (f"ciao {guest[5]} che ne dici di andare a cena fuori insieme ai tuoi compagni di squadra? ")
+
+#3-7
+toy = guest.pop(5) 
+
+print ("posso far venire solo due di voi per un equivoco")
+
+print (f" scusa {toy} ma non è più disponibile il tavolo, faremo un'altra volta")
+
+toy = guest.pop(4)
+
+print (f" scusa {toy}ma non è più disponibile il tavolo, faremo un'altra volta")
+
+toy = guest.pop(3)
+
+print (f" scusa {toy}ma non è più disponibile il tavolo, faremo un'altra volta")
+
+toy = guest.pop(2)
+
+print (f" scusa {toy}ma non è più disponibile il tavolo, faremo un'altra volta")
+
+print (f" {guest[0]} e {guest[1]} tranquilli, siete ancora invitati")
+
+del guest[0]
+del guets[0]  
+
+print (guest)
