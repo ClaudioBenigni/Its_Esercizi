@@ -50,6 +50,6 @@ print (f" scusa {toy}ma non è più disponibile il tavolo, faremo un'altra volta
 print (f" {guest[0]} e {guest[1]} tranquilli, siete ancora invitati")
 
 del guest[0]
-del guets[0]  
+del guest[0]  
 
 print (guest)
