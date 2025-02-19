@@ -1,0 +1,15 @@
+usernames = ["admin","tune","bop","tale","dane"]
+
+for x in usernames:
+    
+    if x == "admin":
+        print (f"You are great {x}")
+    
+    else:
+        print (f"Good morning {x} ")
+
+for index in range (len(usernames)):
+    usernames.pop()
+    
+    if len(usernames) == 0:
+        print("The list is empty")

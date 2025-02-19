@@ -1,0 +1,17 @@
+alien_color = input("Di che colore è l'alieno?")
+
+alien_color_g = "green"
+alien_color_r = "red"
+alien_color_y = "yellow"
+
+if alien_color == alien_color_g:
+    print("Hai guadagnato 5pt")
+
+elif alien_color == alien_color_r:
+    print("Hai guadagnato 10pt")
+
+elif alien_color == alien_color_y:
+    print ("HAi guadagnato 15pt")
+
+else:
+    print ("Alieno estraneo")

@@ -1,0 +1,9 @@
+programma = {"tupla":"Tuples are a data type in Python used to store an ordered sequence of elements",
+             "integer":"Numbers without decimals. Can be positive or negative",
+             "float":"Numbers with decimals. Can be positive or negative",
+             "string":"Textual data, but really, can be any symbols as long as it’s in quotation marks (“ ” or ‘ ’)",
+             "boolean":"Value that’s returned by logical operations. Can only be True or False"}
+
+for x in programma:
+    print(programma[x])
+

@@ -1,0 +1,11 @@
+favorite_places = {
+    'Alice': ['Paris', 'Tokyo', 'New York'],
+    'Bob': ['Mount Everest', 'Grand Canyon'],
+    'Charlie': ['Rome', 'Berlin', 'Sydney', 'Barcelona']
+}
+
+for name, places in favorite_places.items():
+    print(f"{name}")
+    for place in places:
+        print(f" {place}")
+ 

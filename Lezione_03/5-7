@@ -1,0 +1,23 @@
+fruit = str(input("Insert a fruit: "))
+
+favorite_fruits = ["Apple","Pear","Banana"] 
+
+if fruit == "Cherry":
+    print("Not in the list")
+
+elif fruit == "Pineapple":
+    print("Not in the list")
+
+elif fruit == "Apple":
+    print("You really like Apples")
+
+elif fruit == "Pear":
+    print("You really like Pears")
+
+elif fruit == "Banana":
+    print("You really like Bananas")
+
+else:
+    print ("Not in the list")
+
+

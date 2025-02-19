@@ -1,0 +1,13 @@
+numeri = {
+    "Lucia": [10, 15, 20],
+    "Claudio": [8, 7, 9],
+    "Domenico": [2, 3],
+    "Lorenzo": [22, 25, 30],
+    "Antonio": [14, 18, 12]
+}
+
+
+for person, numbers in numeri.items():
+    print(f"{person}")
+    for number in numbers:
+        print(f"{number}")

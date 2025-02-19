@@ -1,0 +1,9 @@
+cane = {"kind":"labrador","owner":"Luca"}
+gatto = {"kind":"gatto_siamese","owner":"Alberto"}
+coniglio = {"kind":"coniglio_albino","owner":"Giada"}
+
+pets = [cane, gatto, coniglio]
+
+for animal in pets:
+    print(f"kind: {animal['kind']}")
+    print(f"owner: {animal['owner']}")

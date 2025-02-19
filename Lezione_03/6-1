@@ -1,0 +1,4 @@
+persona = {"Nome":"Matteo", "Cognome":"Bussi", "Età":19, "Città":"Castel_Madama"}
+
+for x in persona: 
+    print (persona[x]) 

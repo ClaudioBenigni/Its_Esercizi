@@ -1,0 +1,58 @@
+color = 'blue'
+print("Is color == 'blue'? I predict True.")
+print(color == 'blue')
+
+print("\nIs color != 'green'? I predict True.")
+print(color != 'green')
+
+name = 'Alice'
+print("\nIs name.lower() == 'alice'? I predict True.")
+print(name.lower() == 'alice')
+
+print("\nIs name.lower() == 'bob'? I predict False.")
+print(name.lower() == 'bob')
+
+score = 85
+print("\nIs score == 85? I predict True.")
+print(score == 85)
+
+print("\nIs score != 85? I predict False.")
+print(score != 85)
+
+print("\nIs score > 80? I predict True.")
+print(score > 80)
+
+print("\nIs score < 80? I predict False.")
+print(score < 80)
+
+print("\nIs score >= 85? I predict True.")
+print(score >= 85)
+
+print("\nIs score <= 80? I predict False.")
+print(score <= 80)
+
+x, y = 10, 20
+print("\nIs x > 5 and y < 30? I predict True.")
+print(x > 5 and y < 30)
+
+print("\nIs x > 15 and y < 30? I predict False.")
+print(x > 15 and y < 30)
+
+print("\nIs x > 15 or y < 30? I predict True.")
+print(x > 15 or y < 30)
+
+print("\nIs x > 15 or y > 30? I predict False.")
+print(x > 15 or y > 30)
+
+fruits = ['apple', 'banana', 'cherry']
+print("\nIs 'banana' in fruits? I predict True.")
+print('banana' in fruits)
+
+print("\nIs 'orange' in fruits? I predict False.")
+print('orange' in fruits)
+
+print("\nIs 'orange' not in fruits? I predict True.")
+print('orange' not in fruits)
+
+print("\nIs 'banana' not in fruits? I predict False.")
+print('banana' not in fruits)

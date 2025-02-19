@@ -1,0 +1,8 @@
+numbers = list(range(1, 1000001))
+
+print(f"Min number: {min(numbers)}")
+print(f"Max number: {max(numbers)}")
+
+total_sum = sum(numbers)
+
+print(f"Sum of numbers from 1 to 1 million: {total_sum}")

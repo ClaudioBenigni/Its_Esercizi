@@ -1,0 +1,25 @@
+cities = {
+    "New York": {
+        "country": "USA",
+        "population": "8.4 million",
+        "fact": "New York City is known for its iconic landmarks like the Statue of Liberty and Times Square."
+    },
+    "Tokyo": {
+        "country": "Japan",
+        "population": "14 million",
+        "fact": "Tokyo is the largest metropolitan area in the world by population."
+    },
+    "Paris": {
+        "country": "France",
+        "population": "2.1 million",
+        "fact": "Paris is home to the famous Eiffel Tower and is known as the 'City of Light'."
+    }
+}
+
+
+for city, info in cities.items():
+    print(f"City: {city}")
+    print(f"  Country: {info['country']}")
+    print(f"  Population: {info['population']}")
+    print(f"  Fact: {info['fact']}")
+

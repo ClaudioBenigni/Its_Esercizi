@@ -1,0 +1,38 @@
+car = 'subaru'
+
+print("Is car == 'subaru'? I predict True.")
+print(car == 'subaru')
+
+print("\nIs car == 'audi'? I predict False.")
+print(car == 'audi')
+
+print ("\nIs car == 'ferrari'? i predict False")
+print(car == 'ferrari')
+
+car = 'fast'
+
+print("\n Is car == 'fast'? I predict True")
+print(car == 'fast')
+
+
+print("\n Is car == 'slow'? I predict False")
+print(car == 'slow')
+
+car = 'red'
+
+print("\n Is the car == 'red'? I predict True")
+print(car == 'red')
+
+print("\n Is car == 'black'? I predict False")
+print(car == 'black')
+
+print("\n Is car == 'white'? I predict False")
+print(car == 'white')
+
+car = 'SUV'
+
+print("\n Is the car a 'coupè'? I predict False")
+print(car == 'coupè')
+
+print("\n Is the car a 'SUV'? I predict True")
+print(car == 'SUV')

@@ -1,0 +1,4 @@
+numeri = {"Lucia":10,"Claudio":8,"Domenico":2,"Lorenzo":22,"Antonio":14}
+
+for x in numeri:
+    print (x, numeri[x])  

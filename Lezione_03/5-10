@@ -1,0 +1,16 @@
+current_users=["Ciro","Dado", "Mago", "Tim"]
+new_users= ["Pago","Zano","Ciccio","Dado","Skibi"]
+
+
+for doppione in range (len(new_users)):
+    if new_users[doppione] in current_users:
+        print(f"ci dispiace ma il nome utente {new_users[doppione]} e' gia' stato utilizzato nella lista {current_users}")
+
+current_users1=["Ciro","Dado", "Mago", "Tim"]
+new_users1= ["Pago","Zano","Ciccio","Manuxo","Skibi"]
+
+for doppione in range (len(new_users)):
+    if new_users1[doppione] in current_users1:
+        print(f"ci dispiace ma il nome utente {new_users1[doppione]} e' gia' stato utilizzato nella lista {current_users1}")
+    else:
+        print(f"{new_users1[doppione]} nome utente valido")
