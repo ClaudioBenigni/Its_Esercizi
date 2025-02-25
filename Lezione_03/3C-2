@@ -1,0 +1,38 @@
+voto_italiano = int(input("Inserisci il voto di laurea: "))
+
+if voto_italiano < 66 or voto_italiano > 110:
+    print("Voto non valido")
+
+else:
+   
+    match voto_italiano:
+       
+        case voto if 106 <= voto <= 110:
+            print("GPA 4.0")
+       
+        case voto if 101 <= voto <= 105:
+            print("GPA 3.7")
+       
+        case voto if 96 <= voto <= 100:
+            print("GPA 3.3")
+       
+        case voto if 91 <= voto <= 95:
+            print("GPA 3.0")
+       
+        case voto if 86 <= voto <= 90:
+            print("GPA 2.7")
+       
+        case voto if 81 <= voto <= 85:
+            print("GPA 2.3")
+       
+        case voto if 76 <= voto <= 80:
+            print("GPA 2.0")
+       
+        case voto if 70 <= voto <= 75:
+            print("GPA 1.7")
+       
+        case voto if 66 <= voto <= 69:
+            print("GPA 1.0")
+       
+        case _:
+            print("Voto non valido")
