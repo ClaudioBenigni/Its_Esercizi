@@ -1,0 +1,18 @@
+animale = str(input("Di che animale vuoi conoscere la categoria? "))
+
+match animale:
+
+    case animale if animale in ["cane", "gatto", "cavallo", "elefante", "leone"]:
+        print("Il tuo animale è un mammifero")
+    
+    case animale if animale in ["serpente", "lucertola", "tartaruga", "coccodrillo"]:
+        print("Il tuo animale è un rettile")
+    
+    case animale if animale in ["aquila", "pappagallo", "gufo", "falco"]:
+        print("Il tuo animale è un uccello")
+    
+    case animale if animale in ["squalo", "trota", "salmone", "carpa"]:
+        print("Il tuo animale è un pesce")
+    
+    case _:
+        print("Animale non riconosciuto") 
