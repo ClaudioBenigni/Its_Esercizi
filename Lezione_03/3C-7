@@ -1,0 +1,34 @@
+i = 1
+croce = 0
+testa = 0
+
+for i in range(8):
+    moneta = (input("È uscita testa o croce? "))
+
+    match moneta:
+    
+        case moneta if moneta == "c" or moneta == "C":
+            i+=1
+            croce +=1
+        
+        case moneta if moneta == "t" or moneta =="T":
+            i+=1
+            testa +=1
+        
+        case _:
+            print("La moneta può avere solo testa o croce, non altri tisultati")
+    
+    percentuale_testa = (testa/i) *100
+    percentuale_testa = round(percentuale_testa, 2)
+    print(f"Testa è uscita il {percentuale_testa}% delle volte")
+
+    percentuale_croce = (croce/i) *100
+    percentuale_croce = round(percentuale_croce, 2)
+    print(f"Croce è uscita il {percentuale_croce}% delle volte")
+
+
+        
+    
+        
+
+
