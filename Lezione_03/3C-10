@@ -1,0 +1,27 @@
+giorno = int(input("Inserire il numero del giorno: "))
+mese = str(input("Inserite il mese: "))
+
+data = (giorno,mese)
+
+match data:
+
+    case data if giorno == 1 and mese == "gennaio":
+        print("Capodanno")
+    
+    case data if giorno == 14 and mese == "febbraio":
+        print("San Valentino")
+    
+    case data if giorno == 2 and mese == "giugno":
+        print("Festa della repubblica")
+    
+    case data if giorno == 15 and mese == "agosto":
+        print("Ferragosto")
+
+    case data if giorno == 31 and mese == "ottobre":
+        print("Halloween")
+    
+    case data if giorno == 25 and mese == "dicembre":
+        print("Natale")
+    
+    case _:
+        print("Nessuna festività importante in questa data")

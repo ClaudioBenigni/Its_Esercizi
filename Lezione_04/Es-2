@@ -1,0 +1,10 @@
+def sottrazione (a:int,b:int):
+    
+    risultato = a-b
+
+    return risultato
+
+x = int(input("Inserire un numero: "))
+y = int(input("Inserire il sottraendo: "))
+
+print (f"{x} - {y} = {sottrazione (x,y)}")
