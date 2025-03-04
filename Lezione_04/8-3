@@ -4,4 +4,4 @@ def make_shirt(size:str,text:str):
 
 make_shirt("L","Inter") 
 make_shirt(text="Inter",size="L")
-make_shirt(size="Inter",text="L")
+make_shirt(size="L",text="Inter")
