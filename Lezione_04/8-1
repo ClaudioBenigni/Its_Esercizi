@@ -1,0 +1,5 @@
+def display_message(x):
+    
+    print(f"Sto imparando {x}")
+
+display_message("le funzioni")
