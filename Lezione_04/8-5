@@ -1,0 +1,9 @@
+def describe_city(country : str = "Italy", city : str = "Rome"):
+
+    print(f"{city} is in {country}")
+
+describe_city()
+
+describe_city(city="Tivoli")
+    
+describe_city(country="Spain",city="Barcellona")

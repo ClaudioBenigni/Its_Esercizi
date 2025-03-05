@@ -1,0 +1,10 @@
+def make_album(artist, title, num_songs=None):
+    album = {'artist': artist, 'title': title}
+    if num_songs:
+        album['num_songs'] = num_songs
+    return album
+
+print(make_album("nayt", "lettera q"))
+print(make_album("madman", "mm volume 5"))
+print(make_album("gemitaiz", "scatola nera"))
+print(make_album("kendrick lamar", "dna", 14))

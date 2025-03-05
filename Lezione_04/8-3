@@ -1,7 +1,0 @@
-def make_shirt(size:str,text:str):
-
-    print(f"The shirt is {size} size and the text on it is: {text}")
-
-make_shirt("L","Inter") 
-make_shirt(text="Inter",size="L")
-make_shirt(size="L",text="Inter")

@@ -1,0 +1,14 @@
+messages = ["Inter", "Lazio", "Milan", "Roma"]
+sent_messages = []
+
+def send_messages(messages, sent_messages):
+    while messages:
+        message = messages.pop(0)
+        print(f"Sending message: {message}")
+        sent_messages.append(message)
+    messages.clear()
+
+send_messages(messages, sent_messages)
+
+print("Original messages list:", messages)
+print("Sent messages list:", sent_messages)
