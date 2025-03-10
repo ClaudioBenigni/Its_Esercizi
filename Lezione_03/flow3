@@ -1,0 +1,41 @@
+liberi = 100
+occupati= 0
+posti = liberi
+corso = str(input("Inserire nome corso: "))
+
+while True:
+    
+    opzione = str(input("Inserisci opzione: "))
+
+    
+    match opzione:
+        case "iscrivi":
+            if liberi > 0:
+                liberi -= 1
+                occupati += 1
+    
+            else:
+                print("Non ci sono posti disponibili")
+    
+        case "annulla":
+    
+            if liberi < posti:
+                liberi += 1
+    
+            else:
+                print("Tutti i posti sono già disponibili")
+    
+        case "visualizza":
+            print("liberi", liberi)
+            print("occupati", occupati)
+    
+        case "elimina":
+            corso = str(input("Inserire nome corso: "))
+        
+        case "esci":
+    
+            break
+            
+        case _:
+    
+            continue
