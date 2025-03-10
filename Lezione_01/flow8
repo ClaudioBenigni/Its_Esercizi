@@ -1,0 +1,11 @@
+soglia = int(input("Inserire una soglia: "))
+cont = 0
+
+for i in range (7):
+
+    n = int(input("Inserire un numero: "))
+
+    if n > soglia:
+        print(f"{n} È sopra la soglia")
+
+cont += 1

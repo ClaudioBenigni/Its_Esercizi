@@ -1,0 +1,10 @@
+def build_profile(nome, eta, capelli, peso):
+    
+    return f"{nome}, age {eta}, hair {capelli}, weight {peso}"
+
+profilo = {"nome": "Claudio Benigni", "età": 18, "capelli": "marroni", "peso": 65}
+
+
+profile = build_profile(profilo["nome"], profilo["età"], profilo["capelli"], profilo["peso"])
+
+print(profile)

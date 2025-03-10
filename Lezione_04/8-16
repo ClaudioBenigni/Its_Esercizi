@@ -1,0 +1,14 @@
+import nomi
+print(nomi.greet("Alice"))
+
+from nomi import greet
+print(greet("Bob"))
+
+from nomi import greet as fn
+print(fn("Luca"))
+
+import nomi as mn
+print(mn.greet("Diego"))
+
+from nomi import *
+print(greet("Claudio"))
