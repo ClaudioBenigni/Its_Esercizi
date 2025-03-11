@@ -1,0 +1,51 @@
+numeri = []
+somma_pari = 0
+somma_dispari = 0
+numero_dispari = 0
+frequenti = []
+frequenza = 0
+
+while True:
+   
+    numero = int(input("Inserisci un numero (0 per terminare): "))
+    
+    if numero == 0:
+        break
+    
+    numeri.append(numero)
+
+    if numero % 2 == 0:
+       
+        somma_pari += numero
+    
+    else:
+        
+        somma_dispari += numero
+        numero_dispari += 1
+
+print(f"Somma dei numeri pari: {somma_pari}")
+
+if numero_dispari > 0:
+    
+     print(f"Media dei numeri dispari: {somma_dispari / numero_dispari}")
+
+else:
+   
+    print("Non sono stati inseriti numeri dispari.")
+
+for x in numeri:
+   
+    conteggio = numeri.count(x)
+
+    if conteggio > frequenza:
+        
+        frequenza = conteggio
+        frequenti = [x]
+    
+    elif conteggio == frequenza and x not in frequenti:
+       
+        frequenti.append(x)
+
+for x in frequenti:
+    
+    print(f"Numero più frequente: {x} ({frequenza} volte)")
