@@ -1,0 +1,27 @@
+class Person:
+    def __init__(self, name, age):
+        self.name = name
+        self.age = age
+
+alice = Person("Alice W.", 45)
+bob = Person("Bob M.", 36)
+
+print("Bob's age:", bob.age)
+
+if alice.age > bob.age:
+    print("Oldest person:", alice.name)
+else:
+    print("Oldest person:", bob.name)
+
+claudio = Person("Claudio B.", 19)
+diana = Person("Diana S.", 44)
+eva = Person("Eva L.", 40)
+
+people = [alice, bob, claudio, diana, eva]
+
+youngest = people[0]
+for person in people:
+    if person.age < youngest.age:
+        youngest = person
+
+print("Youngest person:", youngest.name)
