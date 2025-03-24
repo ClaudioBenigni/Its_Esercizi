@@ -1,0 +1,34 @@
+class Animal:
+    def __init__(self, name, legs, habitat):
+        self.name = name
+        self.legs = legs
+        self.habitat = habitat
+    
+    def setLegs(self, new_leg_count):
+        self.legs = new_leg_count
+    
+    def getLegs(self):
+        return self.legs
+    
+    def printInfo(self):
+        print(f"Name: {self.name}")
+        print(f"Legs: {self.legs}")
+        print(f"Habitat: {self.habitat}")
+
+dog = Animal("Dog", 4, "Land")
+octopus = Animal("Octopus", 8, "Ocean")
+
+print(dog.name)
+print(octopus.name)
+
+octopus.legs = 7
+print(octopus.legs)
+
+octopus.setLegs(8)
+print(octopus.legs)
+
+print(dog.getLegs())
+print(octopus.getLegs())
+
+dog.printInfo()
+octopus.printInfo()
