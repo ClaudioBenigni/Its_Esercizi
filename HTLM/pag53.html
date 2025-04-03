@@ -1,0 +1,43 @@
+<!DOCTYPE html><html lang="it">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Registrazione</title>
+</head>
+<body>
+    <h1>Benvenuti nel Nostro Sito!</h1>
+    <p>
+        Lorem ipsum dolor sit <i>amet</i>, consectetur adipiscing elit, sed do eiusmod tempor incididunt ut labore et dolore magna aliqua.
+        Ut enim ad minim veniam, quis nostrud exercitation ullamco laboris nisi ut aliquip ex ea commodo consequat.
+        Duis aute irure dolor in reprehenderit in voluptate velit esse cillum dolore eu fugiat nulla pariatur.
+        Excepteur sint occaecat cupidatat non proident, sunt in culpa qui officia deserunt mollit anim id est laborum.
+    </p><h2>Crea un Nuovo Account</h2>
+<form>
+    <label>Nome: <input type="text" name="nome"></label>
+    <label>Cognome: <input type="text" name="cognome"></label><br><br>
+    <label>Il tuo indirizzo e-mail: <input type="email" name="email"></label><br><br>
+    <label>Nuova Password: <input type="password" name="password"></label><br><br>
+    
+    <label>Uomo <input type="radio" name="genere" value="uomo"></label>
+    <label>Donna <input type="radio" name="genere" value="donna"></label><br><br>
+    
+    <label>Come hai conosciuto il sito?
+        <select name="conoscenza">
+            <option value="amici">Consigliato da Amici</option>
+            <option value="social">Social Media</option>
+            <option value="ricerca">Ricerca su Internet</option>
+            <option value="altro">Altro</option>
+        </select>
+    </label><br><br>
+    
+    <label>Parlaci di te:<br>
+        <textarea name="descrizione" rows="4" cols="50"></textarea>
+    </label><br><br>
+    
+    <label><input type="checkbox" name="condizioni"> Accetto le <a href="#">Condizioni d'Uso</a></label><br><br>
+    
+    <button type="submit">Crea Account</button>
+</form>
+
+</body>
+</html>
