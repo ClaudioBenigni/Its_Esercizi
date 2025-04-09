@@ -1,0 +1,37 @@
+class Restaurant:
+    def __init__(self, restaurant_name, cuisine_type):
+        self.restaurant_name = restaurant_name
+        self.cuisine_type = cuisine_type
+        self.number_served = 0
+
+    def describe_restaurant(self):
+        print(f"Restaurant Name: {self.restaurant_name}")
+        print(f"Cuisine Type: {self.cuisine_type}")
+
+    def open_restaurant(self):
+        print(f"{self.restaurant_name} is now open!")
+
+    def set_number_served(self):
+        try:
+            self.number_served = int(input("Quanti clienti sono stati serviti? "))
+            print(f"Clienti serviti: {self.number_served}")
+        except:
+            print("Inserisci un numero valido.")
+
+    def increment_number_served(self):
+        try:
+            incremento = int(input("Quanti clienti in più? "))
+            self.number_served += incremento
+            print(f"Totale clienti serviti: {self.number_served}")
+        except:
+            print("Inserisci un numero valido.")
+
+restaurant = Restaurant("Benny", "Italiano")
+
+print(restaurant.restaurant_name)
+print(restaurant.cuisine_type)
+
+restaurant.describe_restaurant()
+restaurant.open_restaurant()
+restaurant.set_number_served()
+restaurant.increment_number_served()
