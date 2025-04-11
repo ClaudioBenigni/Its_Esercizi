@@ -3,6 +3,50 @@
 <head>
   <meta charset="UTF-8">
   <title>Modulo di Registrazione</title>
+  <script>
+    function controllaForm(event) {
+      event.preventDefault();
+      
+      var tuttoOk = true;
+      
+      var cognome = document.getElementById('cognome').value;
+      if(cognome === '') {
+        alert('Devi scrivere il cognome');
+        tuttoOk = false;
+      }
+      
+      var nome = document.getElementById('nome').value;
+      if(nome === '') {
+        alert('Devi scrivere il nome');
+        tuttoOk = false;
+      }
+      
+      var matricola = document.getElementById('matricola').value;
+      if(matricola === '' || isNaN(matricola)) {
+        alert('La matricola deve essere un numero');
+        tuttoOk = false;
+      }
+      
+      var regione = document.getElementById('regione').value;
+      if(regione === '') {
+        alert('Devi scegliere una regione');
+        tuttoOk = false;
+      }
+      
+      var email = document.getElementById('email').value;
+      var telefono = document.getElementById('telefono').value;
+      if(email === '' && telefono === '') {
+        alert('Devi inserire almeno l\'email o il telefono');
+        tuttoOk = false;
+      }
+      
+      if(tuttoOk) {
+        event.target.submit();
+      }
+    }
+    
+    document.querySelector('form').addEventListener('submit', controllaForm);
+  </script>
 </head>
 <body>
   <h1>Modulo di Registrazione</h1>
