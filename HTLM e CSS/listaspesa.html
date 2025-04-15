@@ -1,0 +1,82 @@
+<!DOCTYPE html>
+<html lang="it">
+<head>
+  <meta charset="UTF-8" />
+  <title>Lista Prodotti</title>
+  <style>
+    body {
+      font-family: Arial, sans-serif;
+      background: #f4f4f4;
+      padding: 30px;
+      display: flex;
+      flex-direction: column;
+      align-items: center;
+    }
+    h1 {
+      color: #333;
+    }
+    .input-container {
+      margin-bottom: 20px;
+    }
+    input {
+      padding: 10px;
+      font-size: 16px;
+      width: 250px;
+      border: 1px solid #ccc;
+      border-radius: 5px;
+    }
+    button {
+      padding: 10px 15px;
+      font-size: 16px;
+      background-color: #28a745;
+      color: white;
+      border: none;
+      border-radius: 5px;
+      margin-left: 10px;
+      cursor: pointer;
+    }
+    button:hover {
+      background-color: #218838;
+    }
+    ul {
+      list-style-type: none;
+      padding: 0;
+      margin-top: 20px;
+      width: 300px;
+    }
+    li {
+      background: white;
+      padding: 10px;
+      margin-bottom: 10px;
+      border-radius: 5px;
+      box-shadow: 0 0 5px rgba(0,0,0,0.1);
+    }
+  </style>
+</head>
+<body>
+  <h1>Lista Prodotti</h1>
+  <div class="input-container">
+    <input type="text" id="productInput" placeholder="Nome prodotto" />
+    <button onclick="aggiungiProdotto()">Aggiungi</button>
+  </div>
+  <ul id="productList"></ul>
+
+  <script>
+    function aggiungiProdotto() {
+      const input = document.getElementById("productInput");
+      const nomeProdotto = input.value.trim();
+
+      if (nomeProdotto === "") {
+        alert("Inserisci un nome valido!");
+        return;
+      }
+
+      const li = document.createElement("li");
+      li.textContent = nomeProdotto; 
+      document.getElementById("productList").appendChild(li);
+
+      input.value = ""; 
+    }
+  </script>
+</body>
+</html>

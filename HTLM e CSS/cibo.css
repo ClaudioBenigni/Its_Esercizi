@@ -1,0 +1,30 @@
+body {
+    background-color: #cccccc; 
+    font-family: sans-serif;
+    padding: 20px;
+  }
+  
+  h1 {
+    text-align: center;
+  }
+  
+  .lista-cibo {
+    list-style: none;
+    padding: 0;
+    max-width: 600px;
+    margin: auto;
+  }
+  
+  .lista-cibo li {
+    background: white;
+    margin: 15px 0;
+    padding: 10px;
+    border-radius: 8px;
+    text-align: center;
+  }
+  
+  .lista-cibo img {
+    width: 200px;
+    border-radius: 5px;
+  }
+  
