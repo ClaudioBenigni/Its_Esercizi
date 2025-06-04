@@ -1,0 +1,39 @@
+def punteggio():
+    nome = input("Qual è il tuo nome?: ")
+    materia = input("Di che materia si parla?: ")
+    voti = []
+
+    while True:
+        d = input("Vuoi aggiungere un voto, sapere la media, avere un riepilogo o uscire? (Scrivi: VOTO, MEDIA, RIEPILOGO, ESCI): ")
+
+        if d.upper() == "VOTO":
+            x = input("Quanto è il voto?: ")
+            if x.replace('.', '', 1).isdigit(): 
+                x = float(x)
+                voti.append(x)
+                print(f"Voto aggiunto: {x}")
+            else:
+                print("Inserisci un numero valido.")
+        
+        elif d.upper() == "MEDIA":
+            if voti:
+                media = sum(voti) / len(voti)
+                print(f"La media è uguale a {media:.2f}")
+            else:
+                print("Non ci sono voti inseriti.")
+        
+        elif d.upper() == "RIEPILOGO":
+            if voti:
+                media = sum(voti) / len(voti)
+                print(f"{nome}, hai una media di {media:.2f} nella materia {materia}.")
+            else:
+                print("Non hai ancora inserito voti.")
+        
+        elif d.upper() == "ESCI":
+            print("Programma terminato.")
+            break
+        
+        else:
+            print("Comando non riconosciuto. Scrivi: VOTO, MEDIA, RIEPILOGO o ESCI.")
+
+punteggio()

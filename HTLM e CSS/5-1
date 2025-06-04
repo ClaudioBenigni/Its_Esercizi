@@ -1,0 +1,23 @@
+<!DOCTYPE html>
+<html>
+<head>
+  <title>Uguaglianza</title>
+</head>
+<body>
+  <h2>Controllo Identicità</h2>
+  <input type="text" id="val1" placeholder="Valore 1">
+  <input type="text" id="val2" placeholder="Valore 2">
+  <button onclick="controllaUguaglianza()">Controlla</button>
+  <p id="risultato"></p>
+
+  <script>
+    function controllaUguaglianza() {
+      const a = document.getElementById("val1").value;
+      const b = document.getElementById("val2").value;
+      const risultato = (a === b) ? "TRUE" : "FALSE";
+
+      document.getElementById("risultato").innerText = "Risultato: " + risultato;
+    }
+  </script>
+</body>
+</html>

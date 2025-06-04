@@ -1,0 +1,124 @@
+<!DOCTYPE html>
+<html>
+<head>
+  <title>Esercizi Cicli e Array</title>
+</head>
+<body>
+
+  <h2>Esercizio 4.1 – Tabellina con for e while</h2>
+  <script>
+    let numero = 5;
+    document.write("<strong>Con for:</strong><br>");
+    for (let i = 1; i <= 10; i++) {
+      document.write(numero + " x " + i + " = " + (numero * i) + "<br>");
+    }
+
+    document.write("<br><strong>Con while:</strong><br>");
+    let j = 1;
+    while (j <= 10) {
+      document.write(numero + " x " + j + " = " + (numero * j) + "<br>");
+      j++;
+    }
+  </script>
+
+  <h2>Esercizio 4.2 – Numeri da 0 a 10 con for e while</h2>
+  <script>
+    document.write("<strong>Con for:</strong><br>");
+    for (let i = 0; i <= 10; i++) {
+      document.write(i + " ");
+    }
+
+    document.write("<br><strong>Con while:</strong><br>");
+    let i2 = 0;
+    while (i2 <= 10) {
+      document.write(i2 + " ");
+      i2++;
+    }
+  </script>
+
+  <h2>Esercizio 4.3 – Numeri da 5 a 15 con for e while</h2>
+  <script>
+    document.write("<br><strong>Con for:</strong><br>");
+    for (let i = 5; i <= 15; i++) {
+      document.write(i + " ");
+    }
+
+    document.write("<br><strong>Con while:</strong><br>");
+    let i3 = 5;
+    while (i3 <= 15) {
+      document.write(i3 + " ");
+      i3++;
+    }
+  </script>
+
+  <h2>Esercizio 4.4 – Conta da 0 a 20 con passo 2</h2>
+  <script>
+    document.write("<br><strong>Con for:</strong><br>");
+    for (let i = 0; i <= 20; i += 2) {
+      document.write(i + " ");
+    }
+
+    document.write("<br><strong>Con while:</strong><br>");
+    let i4 = 0;
+    while (i4 <= 20) {
+      document.write(i4 + " ");
+      i4 += 2;
+    }
+  </script>
+
+  <h2>Esercizio 4.5 – Doppio dei numeri da 0 a 20 con passo 2</h2>
+  <script>
+    document.write("<br><strong>Con for:</strong><br>");
+    for (let i = 0; i <= 20; i += 2) {
+      document.write((i * 2) + " ");
+    }
+
+    document.write("<br><strong>Con while:</strong><br>");
+    let i5 = 0;
+    while (i5 <= 20) {
+      document.write((i5 * 2) + " ");
+      i5 += 2;
+    }
+  </script>
+
+  <h2>Esercizio 4.6 – Somma e media di un array (5 numeri)</h2>
+  <script>
+    let numeri = [4, 8, 15, 16, 23];
+    let somma = 0;
+    for (let i = 0; i < numeri.length; i++) {
+      somma += numeri[i];
+    }
+    let media = somma / numeri.length;
+    document.write("Somma: " + somma + "<br>");
+    document.write("Media: " + media + "<br>");
+  </script>
+
+  <h2>Esercizio 4.7 – Numero più grande in un array (7 numeri)</h2>
+  <script>
+    let numeri2 = [10, 22, 5, 67, 3, 89, 41];
+    let max = numeri2[0];
+    for (let i = 1; i < numeri2.length; i++) {
+      if (numeri2[i] > max) {
+        max = numeri2[i];
+      }
+    }
+    document.write("Il numero più grande è: " + max + "<br>");
+  </script>
+
+  <h2>Esercizio 4.8 – Conteggio numeri pari e dispari in un array (10 numeri)</h2>
+  <script>
+    let numeri3 = [1, 2, 3, 4, 5, 6, 7, 8, 9, 10];
+    let pari = 0;
+    let dispari = 0;
+    for (let i = 0; i < numeri3.length; i++) {
+      if (numeri3[i] % 2 === 0) {
+        pari++;
+      } else {
+        dispari++;
+      }
+    }
+    document.write("Nell’array ci sono " + pari + " numeri pari e " + dispari + " numeri dispari.");
+  </script>
+
+</body>
+</html>

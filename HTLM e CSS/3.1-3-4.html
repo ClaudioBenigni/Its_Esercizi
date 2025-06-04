@@ -1,0 +1,43 @@
+<!DOCTYPE html>
+<html>
+<head>
+  <title>Esercizi JavaScript</title>
+</head>
+<body>
+  <h2>Esercizio 3.1 – Somma e Media</h2>
+  <script>
+    let n1 = 10, n2 = 20, n3 = 30, n4 = 40, n5 = 50;
+    let somma = n1 + n2 + n3 + n4 + n5;
+    let media = somma / 5;
+    document.write("Somma: " + somma + "<br>");
+    document.write("Media: " + media + "<br><br>");
+  </script>
+
+  <h2>Esercizio 3.2 – Età e Anni per 100</h2>
+  <script>
+    let annoCorrente = 2025;
+    let annoNascita = 2000;
+    let eta = annoCorrente - annoNascita;
+    let anniMancanti = 100 - eta;
+    document.write("Età: " + eta + "<br>");
+    document.write("Anni per arrivare a 100: " + anniMancanti + "<br><br>");
+  </script>
+
+  <h2>Esercizio 3.3 – Secondi in Ore, Minuti e Secondi</h2>
+  <script>
+    let inputSecondi = 12560;
+    let ore = Math.floor(inputSecondi / 3600);
+    let minuti = Math.floor((inputSecondi % 3600) / 60);
+    let secondi = inputSecondi % 60;
+    document.write(inputSecondi + " secondi = " + ore + " ore, " + minuti + " minuti, " + secondi + " secondi<br><br>");
+  </script>
+
+  <h2>Esercizio 3.4 – Correzione Somma Prompt</h2>
+  <script>
+    var a = prompt("Inserisci il primo numero");
+    var b = prompt("Inserisci il secondo numero");
+    var sommaPrompt = Number(a) + Number(b);
+    document.write("La somma dei numeri inseriti è: " + sommaPrompt);
+  </script>
+</body>
+</html>

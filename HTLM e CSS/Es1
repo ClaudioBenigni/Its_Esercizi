@@ -1,0 +1,11 @@
+<!DOCTYPE html>
+<html lang="it">
+<head>
+    <meta charset="UTF-8">
+    <title>Esercizio 1.1</title>
+</head>
+<body>
+    <h1>Test pagina</h1>
+    <script src="esercizio1_1.js"></script>
+</body>
+</html>
