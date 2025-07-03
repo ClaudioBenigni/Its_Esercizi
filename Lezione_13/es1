@@ -1,0 +1,7 @@
+def recursivePower(base: int, exponent: int) -> int:
+    if exponent == 0:
+        return 1
+    else:
+        return base * recursivePower(base, exponent - 1)
+
+print("Risultato:", recursivePower(3, 4))  
