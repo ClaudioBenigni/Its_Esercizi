@@ -1,4 +1,4 @@
-export const persone=[{
+export const anagrafica=[{
     id:"1",
     nome:"Rob",
     cognome:"Del"

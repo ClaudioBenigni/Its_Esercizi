@@ -1,0 +1,33 @@
+def leggi_nomi():
+    nomi = []
+
+    while len(nomi) < 30:
+        nome = input("Inserisci un nome: ").strip()
+
+        if nome == "":
+            print("Il nome non può essere vuoto.")
+            continue
+
+        if len(nome) >= 20:
+            print("Il nome deve essere più corto di 20 caratteri.")
+            continue
+
+        
+        if nome.lower() in [n.lower() for n in nomi]:
+            break
+
+        nomi.append(nome)
+
+    print(f"\nHai inserito {len(nomi)} nomi distinti.")
+
+    if nomi:
+        nome_piu_lungo = max(nomi, key=len)
+        print(f"Il più lungo è {nome_piu_lungo} con {len(nome_piu_lungo)} caratteri.")
+        print("I nomi inseriti sono:")
+        for n in nomi:
+            print(n)
+    else:
+        print("Nessun nome valido è stato inserito.")
+
+
+leggi_nomi()
