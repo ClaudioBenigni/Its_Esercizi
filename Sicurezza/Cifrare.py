@@ -1,59 +1,76 @@
-# Primo modulo RSA (n)
-n = int(
-    "00d3bde010ebe6fe526c956aa3a3f0"
-    "5a92b95aa63aaf9c39e174eb02f4d3"
-    "3722b6f878f2b81341d69f2245f2d5"
-    "73962842412a4aa4e4284ea5d4c080"
-    "1f5d950a2ddb6402e650b756171528"
-    "7b7275d4751023a1c430c491cbb21f"
-    "4a26ebb5eecd643b5d67ae5630f9e1"
-    "8518e1bb4101ea72c469736f6b5eb0"
-    "40cdc99482c47b98a5c0d7b64e5bc9"
-    "3c91b604e9115870c67eedaa1fa618"
-    "5b0e45a52483faaa2edb58665c6165"
-    "0dfe61b4b0eba3ca7f770d3d8e487b"
-    "accc220058e32895e24d3bfd388329"
-    "b57a1a657252b2918f758b172f4e1b"
-    "3c3ea43d3e62d75856b03387cbba35"
-    "766db2fd625844fcdb38f62d1c1a4c"
-    "c176c926338f65487e014711302aac"
-    "10ad", 16
-)
+n = "009a0a59eec8fea61d00fbc95ba90c" +\
+    "5c1569c5148f449109d63d1fac0b05" +\
+    "cb7150a83eaa721687f4967856c383" +\
+    "6506a83458345fe84f5fa66b55320c" +\
+    "ab53ee820ab11a062ecd8c51a74c6a" +\
+    "9b2a05e3596a5e782411894647d580" +\
+    "3e68ed7bb7e1adee9229e5144ed5e8" +\
+    "e81ae8b67dc4ded1b507328ddaedd4" +\
+    "5bfcb5786eccdbc725fe418923ec06" +\
+    "3578b9c99856b69767dcf18d20aa0e" +\
+    "f0e62f9db0b5681467712575eea133" +\
+    "635ec7c76b2caedfac969d3901ba2e" +\
+    "1415a5b7a06e6c95475d0a773638bd" +\
+    "1d1fbcf5ff9bc085b29b34be7e19ab" +\
+    "004ca98c908b9477ca9eb878cd7bd4" +\
+    "3fde26bb6b972236e0183a84f870d5" +\
+    "68b6a03857f563fb6916b3f81577db" +\
+    "1ca5"
+# Definizione del modulo RSA (n) in esadecimale, spezzato su più righe e concatenato come stringa
 
-# Esponente pubblico
+n_decimale = int(n, 16)
+# Conversione di n da stringa esadecimale a intero decimale
+
+M = "Viva il calcio"
+# Messaggio in chiaro da cifrare
+
+Mi = int(M.encode("utf-8").hex(), 16)
+# Conversione del messaggio in bytes UTF-8 → esadecimale → intero decimale
+
 e = 3
+# Esponente pubblico RSA (valore tipico, piccolo)
 
-# Messaggio originale
-msg = "Ciao,come va...?"
-msg_int = int(msg.encode("utf-8").hex(), 16)
+C = pow(Mi, e, n_decimale)
+# Cifratura RSA: C = M^e mod n
 
-# Prima cifratura RSA
-C1 = pow(msg_int, e, n)
-print("C1:", C1)
+print(C)
+# Stampa del messaggio cifrato
 
-# Secondo modulo RSA (n2)
-n2 = int(
-    "234a5002d1fbd50dbcc391c5f0a80f"
-    "187439c65f1d44b4503e272b28cdde"
-    "85c929697dc9588af91a85b6532393"
-    "43b1606031b71b7b5c0d1ba3756aaf"
-    "e4ee2c5cf9e6007bb81e8e592e3169"
-    "e868f8be2d5b45a0b2cb6da1f30537"
-    "067c9e527790b48f9147b90829a596"
-    "2ed049e02afc687611933d3c8fc80a"
-    "ccf6ee15cb69eec5fce357ed36020a"
-    "16d1ad18e346a666fa47d0fbfbdf0d"
-    "19faba30ee4fd0b25920dcca9cc0af"
-    "944419f630efd25823775e3bc1bfae"
-    "24e05be58562d23139da3b91ac8bc6"
-    "e7a83ab52d1c564f1e624ef1acb48c"
-    "71358684dee15a95ae805a7170bb3a"
-    "6e43df4430dd0de59eaea53391a903"
-    "6b189c633cc635b920341b127a4955"
-    "fb", 16
-)
+d = "19ac645276d51baf8029f6e49c2cba" +\
+    "0391a0d8c28b6d81a3b4da9cac80f7" +\
+    "3d8d715fc71303c1536e6963cb4090" +\
+    "d6715e0eb36551628ff111e3885771" +\
+    "e3526b01c82f0107ccecb8468cbc6f" +\
+    "31aba5e43c65140602ec36614e400a" +\
+    "66d23f495047a7c306fb836278fc26" +\
+    "af26c914f62522f3813317a47cf8b9" +\
+    "ff7394127779f68612a77db452664d" +\
+    "fcc7a0462c8090289cbcac7bffd3ec" +\
+    "a2bd6dcc9b8a394b5b9e9f8df8dbd0" +\
+    "853c4f92d85aaf87023f63f4fadcb1" +\
+    "5e065c25306c16d900b0a23e1bf7fd" +\
+    "b8c4eb907e7fff2c458179f4ad59c4" +\
+    "cb9e0d1710b2da30be3de29cbde43c" +\
+    "b88a8b054a93cb9fe11a68012dc5af" +\
+    "e3a144c8e19b283804dee14a84c4dc" +\
+    "cb"
+# Definizione della chiave privata RSA (d) in esadecimale
 
-# Seconda cifratura (sul risultato della prima)
-# Qui non serve nessuna encode: C1 è già un numero
-C2 = pow(C1, e, n2)
-print("C2:", C2)
+d_decimale = int(d, 16)
+# Conversione di d da stringa esadecimale a intero decimale
+
+D = pow(C, d_decimale, n_decimale)
+# Decifratura RSA: D = C^d mod n (otteniamo il messaggio in chiaro in formato intero)
+
+d_decimale = format(D, "x")
+# Conversione del messaggio decifrato in esadecimale
+
+if len(d_decimale) % 2 != 0:
+    d_decimale = "0" + d_decimale
+# Aggiunge uno zero davanti se la stringa esadecimale ha lunghezza dispari (necessario per bytes.fromhex)
+
+testo = bytes.fromhex(d_decimale).decode("utf-8")
+# Conversione da esadecimale a stringa UTF-8 (messaggio originale)
+
+print(testo)
+# Stampa del messaggio in chiaro decifrato
