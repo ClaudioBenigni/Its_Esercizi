@@ -1,0 +1,27 @@
+<!DOCTYPE html>
+<html>
+<head>
+    <title>Login</title>
+</head>
+<body>
+    <h1>Login</h1>
+    <form action="/api/protected_login" method="POST">
+        <div>
+            <label>Username:</label>
+            <input type="text" name="username" required>
+        </div>
+        <div>
+            <label>Password:</label>
+            <input type="password" name="password" required>
+        </div>
+        <button type="submit">Login</button>
+    </form>
+    <p><a href="/">Torna alla Home</a></p>
+    
+    <div style="margin-top: 20px; padding: 10px; background: #f0f0f0;">
+        <h3>Credenziali di test:</h3>
+        <p>admin / password123</p>
+        <p>user1 / 123456</p>
+    </div>
+</body>
+</html>
