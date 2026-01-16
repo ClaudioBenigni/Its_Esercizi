@@ -1,0 +1,28 @@
+Sito:
+https://api.esempio.it
+
+POST /prenotazioni
+Host: https://api.esempio.it
+Content-Type: application/json
+
+{
+   'id': 12,
+   'cliente': 'Luca Neri', 
+   'campo': 3, 
+   'data': '2025-03-20', 
+   'ora': '18:00', 
+   'durata_ore': 2
+}
+
+POST /prenotazioni
+Host: https://api.esempio.it
+Content-Type: application/json
+
+{
+   'id': 13,
+   'cliente': 'Mario Neri', 
+   'campo': 5, 
+   'data': '2025-03-22', 
+   'ora': '11:00', 
+   'durata_ore': 1
+}
